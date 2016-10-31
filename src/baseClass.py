@@ -35,6 +35,10 @@ import sys
 DEFAULT_AGENT = "fimap.googlecode.com"
 
 import urllib, httplib, copy, urllib2
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import string,random,os,socket, os.path
 
 __author__="Iman Karim(ikarim2s@smail.inf.fh-brs.de)"
